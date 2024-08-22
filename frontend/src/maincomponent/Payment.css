@@ -1,0 +1,162 @@
+
+.paymentcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.payment-view {
+  font-family: 'Arial', sans-serif;
+  max-width: 900px;
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3f4f6, #e4e5e6);
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 10%;
+
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .page-title {
+    /* font-size: 20px; */
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff0081, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s linear infinite;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes gradientText {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00bfff, #ff6347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-title {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: -4px;
+  }
+  
+  .price, .quantity, .total {
+    font-size: 1.25rem;
+    color: #444;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  
+  .proceed-to-payment {
+    display: block;
+    width: 50%;
+    padding: 15px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .proceed-to-cancle {
+    display: block;
+    width: 50%;
+    padding: 15px;
+    margin-top: 30px;
+    /* background: linear-gradient(135deg, #28a745, #218838); */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .twobtn button {
+    margin: 10px;
+  }
+  
+  .proceed-to-payment:hover {
+    background: linear-gradient(135deg, #218838, #28a745);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .proceed-to-cancle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .proceed-to-payment:active {
+    transform: scale(1);
+  }
+  
+  .no-product {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 20px;
+  }
+  
+
+
+
+
+
+  .product-detailss {
+    display: flex;
+    border-radius: 20px;
+  }
+
+  .product-detailss > div {
+    margin-left: 30px;
+  }
+
+
+  .product-image-container {
+    height: 130px;
+    width: 100px;
+  }
