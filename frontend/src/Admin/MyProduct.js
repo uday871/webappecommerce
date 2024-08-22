@@ -143,7 +143,7 @@ const MyProduct = () => {
 
             <div className="product-showcase-details">
               <h3>{product.title}</h3>
-              <div className="product-showcase-price">
+              <div className="product-showcase-price" style={{marginTop:'-20px'}}>
                 <span className="current-price">Rs. {product.price}</span>
               </div>
               <div className="product-showcase-sizes">
@@ -151,12 +151,18 @@ const MyProduct = () => {
                   <span key={size} className="product-showcase-size">{size}</span>
                 )) : product.sizes}
               </div>
-              <button className="product-showcase-edit-button" onClick={() => handleEditClick(product)}>Edit</button>
-              <button className="product-showcase-delete-button" onClick={() => handleDeleteClick(product._id)}>Delete</button>
+              <button className="product-showcase-edit-button" onClick={() => handleEditClick(product)} style={{marginTop:'-30px'}}>Edit</button>
+              <button className="product-showcase-delete-button" onClick={() => handleDeleteClick(product._id)} style={{marginTop:''}}>Delete</button>
             </div>
           </div>
         ))}
       </div>
+
+
+
+
+
+
 
       {/* Custom Popup */}
       {isPopupOpen && (

@@ -13,8 +13,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-
 const uri = 'mongodb+srv://ggs699000:gshankar413@clusters.kob95.mongodb.net/d1?retryWrites=true&w=majority';
 
 mongoose.connect(uri, {

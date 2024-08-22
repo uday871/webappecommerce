@@ -30,7 +30,11 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 600px;
+  width: 300px;
 }
+
+
 
 .product-showcase-card:hover {
   transform: translateY(-10px);
@@ -38,11 +42,8 @@ h2 {
 }
 
 .product-showcase-image-container {
-  /* height: 500px; */
-
   position: relative;
   cursor: pointer;
-  /* background-color: red; */
 }
 
 .product-showcase-image {
@@ -64,20 +65,20 @@ h2 {
 }
 
 .product-showcase-details {
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  /* text-align: center; */
 }
 
 .product-showcase-details h3 {
+  margin-top: -20px;
   font-size: 1.5em;
   color: #333;
-  margin-bottom: 10px;
 }
 
 .product-showcase-price {
   font-size: 1.2em;
   color: #e91e63;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .product-showcase-rating {
@@ -98,12 +99,12 @@ h2 {
 }
 
 .product-showcase-edit-button {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: black;
+  padding: 10px;
+  color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
+  background-color: black;
 }
 
 .product-showcase-edit-button:hover {
@@ -111,9 +112,7 @@ h2 {
 }
 
 .product-showcase-edit-form {
-  margin-top: 30px;
-  padding: 30px;
-  background-color: #fff;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
@@ -122,8 +121,8 @@ h2 {
 }
 
 .product-showcase-delete-button {
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -147,7 +146,6 @@ h2 {
 }
 
 .product-showcase-update-button {
-  background-color: #4caf50;
   color: #fff;
   padding: 10px 20px;
   border: none;
