@@ -213,14 +213,6 @@ const handleShopClose = () => {
           </div>
 
 
-
-
-
-
-
-
-
-
           <Drawer anchor="left" open={sidebarOpen} onClose={toggleSidebar} variant="temporary" sx={{ '& .MuiDrawer-paper': { width: 250, boxSizing: 'border-box', }, }}>
             <div className="sidebar" style={{color:'black'}}>
               <List>
@@ -282,7 +274,6 @@ const handleShopClose = () => {
           <Route path="/MobilePayment" element={<MobilePayment />} />
           <Route path="/Logout" element={<Logout />} />
         </Routes>
-        
       </div>
     </Router>
   );

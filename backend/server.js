@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
@@ -8,17 +9,17 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 
 
+
+
 const { Schema } = mongoose;
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const uri = 'mongodb+srv://ggs699000:gshankar413@clusters.kob95.mongodb.net/d1?retryWrites=true&w=majority';
+const mongoDbUrl = process.env.MONGO_DB_CONNECTION_MY_DATABASE;
 
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+
+mongoose.connect(mongoDbUrl)
 .then(() => {
   console.log('Connected to MongoDB');
 })
