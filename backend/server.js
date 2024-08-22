@@ -134,7 +134,6 @@ app.post('/login', async (req, res) => {
 
 
 
-
 //product upload
 const productSchema = new Schema({
   title: String,
