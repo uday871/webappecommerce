@@ -10,7 +10,6 @@ const nodemailer = require('nodemailer');
 
 
 
-
 const { Schema } = mongoose;
 const app = express();
 app.use(cors());

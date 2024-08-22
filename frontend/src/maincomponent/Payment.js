@@ -17,7 +17,7 @@ const Payment = () => {
       <div className="product-detailss">
 
         <div className="product-image-container">
-          <img src={`http://localhost:8000/${product.frontImage}`} alt={product.title} className="product-image" style={{height:'100%',width:'100%',borderRadius:'20px'}}/>
+          <img src={`https://webappecommerceapp.onrender.com/${product.frontImage}`} alt={product.title} className="product-image" style={{height:'100%',width:'100%',borderRadius:'20px'}}/>
         </div>
 
         <div className="details" style={{marginTop:''}}>

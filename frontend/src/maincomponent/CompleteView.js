@@ -69,7 +69,7 @@ const CompleteView = () => {
           {[product.frontImage, product.backImage, product.extraImage1, product.extraImage2].map((src, index) => (
             <div className="frame" key={index}>
               <img
-                src={`http://localhost:8000/${src}`}
+                src={`https://webappecommerceapp.onrender.com/${src}`}
                 alt={product.title}
                 className={initialLoad ? 'initial-zoom' : ''}
               />
